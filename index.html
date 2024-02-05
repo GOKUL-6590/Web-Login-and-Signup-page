@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form>
+        <h1>Login</h1>
+        <div class="textboxdiv">
+            <input type="text" placeholder="Username" id="uname">
+        </div>
+        <div class="textboxdiv">
+            <input type="password" placeholder="Password" id="pass">
+        </div>
+        <input type="button" value="Login" class="loginbtn" onclick="validate()">
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <div class="signup">
+            Don't have an account? <a href="index2.html">Sign up</a>
+        </div>
+    </form>
+    <script>
+        function validate() {
+            if (document.getElementById("uname").value === "gokulmp"
+                && document.getElementById("pass").value === "020304mp") {
+                alert("Validation succeeded");
+                location.href = "https://github.com/GOKUL-6590";
+            } else {
+                alert("Validation failed");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
